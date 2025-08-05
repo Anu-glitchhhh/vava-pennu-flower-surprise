@@ -1,0 +1,55 @@
+body {
+  background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  padding: 50px;
+  color: #4b2c2c;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.flower {
+  width: 200px;
+  animation: float 4s ease-in-out infinite;
+  margin-bottom: 20px;
+}
+
+button {
+  background: #ff5e7e;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #ff3366;
+}
+
+#message {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #e60073;
+  animation: fadeIn 2s ease;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
