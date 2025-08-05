@@ -3,25 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>To My Vava Pennu 💕</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>For My Vava Pennu 💖</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #fddde6, #fdf3f8);
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 50px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #e91e63;
+      animation: pop 1s ease-in-out;
+    }
+
+    img {
+      width: 250px;
+      border-radius: 20px;
+      margin: 30px 0;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #d81b60;
+    }
+
+    #message {
+      font-size: 1.8em;
+      margin-top: 20px;
+      color: #880e4f;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
   <h1>To My Vava Pennu 💕</h1>
+  <img src="flower.gif" alt="Flower Bouquet" />
+  <br />
+  <button onclick="showLove()">Click me</button>
+  <div id="message"></div>
 
-  <img id="flower" src="flower.gif" alt="🌸Flower Bouquet" style="display: none; width: 200px;" />
-
-  <button onclick="showSurprise()">Click me</button>
-
-  <p id="message" style="display: none;">
-    I love you Baby! 💖🌸<br />
-    Forever and ever!
-  </p>
-
-  <audio controls id="bgmusic" style="display: none;">
-    <source src="bgmusic.mp3" type="audio/mpeg" />
-    Your browser does not support the audio element.
-  </audio>
+  <!-- Background song -->
+  <audio id="bgmusic" src="bgmusic.mp3" autoplay loop controls></audio>
 
   <script src="script.js"></script>
 </body>
