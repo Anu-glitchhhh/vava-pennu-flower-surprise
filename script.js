@@ -1,8 +1,4 @@
-function showSurprise() {
-  document.getElementById("flower").style.display = "block";
-  document.getElementById("message").style.display = "block";
-
-  const audio = document.getElementById("bgmusic");
-  audio.style.display = "block";
-  audio.play();
+function showLove() {
+  const msg = document.getElementById("message");
+  msg.innerHTML = "I love you Vava Pennu! 💖🌸<br>Forever and ever!";
 }
